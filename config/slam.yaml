@@ -1,0 +1,36 @@
+slam_toolbox:
+  ros__parameters:
+
+    # Frames
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    scan_topic: /scan
+
+    # Mode
+    mode: mapping   # mapping | localization
+
+    # Publish
+    publish_tf: true
+    map_update_interval: 2.0
+
+    # Laser
+    resolution: 0.05
+    max_laser_range: 12.0
+    minimum_time_interval: 0.5
+
+    # Motion model
+    use_odometry: true
+    transform_timeout: 0.2
+
+    # Loop closure
+    do_loop_closing: true
+    loop_closure_threshold: 0.11
+    loop_closure_search_radius: 8.0
+
+    # Scan matching
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.2
+
+    # Optimization
+    optimization_interval: 10.0
